@@ -1,6 +1,77 @@
-$primary-color: #444;
+@import "config";
+
+/* Box property for everything */
+* {
+  box-sizing: border-box;
+}
 
 body {
+  @include background;
   background: $primary-color;
   color: white;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; /* space between lines*/
+}
+
+/* Heading */
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  /* & replace .h1 .h2*/
+  &.lg-heading {
+    font-size: 6rem; /* 1 rem equal 16 pixels*/
+  }
+  &.sm-heading {
+    margin-bottom: 2rem; /* 32 pixels*/
+    padding: 0.2rem 1rem; /*top-bottom left=right*/
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+/* Links */
+
+a {
+  color: white;
+  text-decoration: 0; /*Will take away ugly underline ?*/
+}
+
+header {
+  position: fixed; /*For the icon in the header to be always on top */
+  z-index: 2; /* vertical stacking order of elements that overlap */
+  width: 100%; /* Extrects across the whole screen*/
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        transition: all 0.5 ease-out;
+        @include easeOut();
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden; /* No scroll bars*/
+    h1 {
+      margin: 20vh; /* Sprilt height in 100 we'll take 20*/
+    }
+  }
 }
