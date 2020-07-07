@@ -2,11 +2,11 @@ $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.7;
+$background-opacity: 0.6;
 
 /*This is like a funcion*/
 @mixin easeOut {
-  transition: all 0.5 ease-out;
+  transition: all 0.5s ease-out;
 }
 
 @mixin background {
@@ -15,8 +15,10 @@ $background-opacity: 0.7;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-
-      .overlay {
+      /*CSS treat the after element to be execute after the bg-img element, 
+          does not need and element in the html file*/
+      &:after {
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
