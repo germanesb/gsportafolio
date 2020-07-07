@@ -12,7 +12,8 @@
     width: 25px;
     height: 2px;
     margin: 0 0 5px 0;
-    background: #fff;
+    color: set-text-color($primary-color);
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -93,6 +94,7 @@
     border-radius: 50%;
     border: solid 3px $secondary-color;
   }
+
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
@@ -106,6 +108,7 @@
       color: $secondary-color;
     }
   }
+
   .nav-link {
     display: inline-block;
     position: relative;
@@ -113,7 +116,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
