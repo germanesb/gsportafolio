@@ -173,7 +173,7 @@ main {
     overflow: hidden;
     /* No scroll bars*/ }
     main#home h1 {
-      margin: 18vh;
+      margin: 15vh;
       /* Spilt height in 100, we'll take 18, affects the scrolling of the whole screen */ }
 
 .about-info {
