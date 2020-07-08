@@ -309,8 +309,8 @@ main {
       padding: 7rem 0 0 0;
       font-size: 3rem;
       font-weight: 350; }
-  .bio {
-    padding: 0 0 0.7rem 0.4rem;
+  .AboutResume {
+    padding: 0 0 6px 6px;
     /*top-bottom left-right*/ }
   .projects {
     grid-template-columns: 1fr; }
