@@ -297,14 +297,14 @@ main {
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 2.2rem 0 0 0; }
+    padding: 1.5rem 0 0 0; }
     main #home h1 {
       margin: 15vh; }
     main .lg-heading {
       margin-top: 3rem;
       padding: 7rem 0 0 0;
-      font-size: 2rem;
-      font-weight: 400; }
+      font-size: 3rem;
+      font-weight: 350; }
   .projects {
     grid-template-columns: 1fr; }
   .boxes div {
