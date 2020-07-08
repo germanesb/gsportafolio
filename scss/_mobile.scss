@@ -89,6 +89,9 @@
       font-weight: 350;
     }
   }
+  .bio {
+    padding: 0 0 0.7rem 0.4rem; /*top-bottom left-right*/
+  }
 
   .projects {
     grid-template-columns: 1fr;
