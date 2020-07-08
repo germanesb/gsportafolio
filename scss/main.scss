@@ -43,7 +43,7 @@ a {
 
 header {
   position: fixed; /*For the icon in the header to be always on top */
-  z-index: 2; /* vertical stacking order of elements that overlap */
+  z-index: 2; /* vertical stucking order of elements that overlap */
   width: 100%; /* Extrects across the whole screen*/
 }
 
@@ -72,7 +72,7 @@ main {
   &#home {
     overflow: hidden; /* No scroll bars*/
     h1 {
-      margin: 20vh; /* Sprilt height in 100 we'll take 20*/
+      margin: 18vh; /* Spilt height in 100, we'll take 18, affects the scrolling of the whole screen */
     }
   }
 }
