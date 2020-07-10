@@ -248,6 +248,9 @@ main {
   background: #c4c4c4;
   color: #333; }
 
+.weather-anywhere {
+  font-weight: 750; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
